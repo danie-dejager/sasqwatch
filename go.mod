@@ -8,13 +8,13 @@ go 1.20
 
 require (
 	github.com/atotto/clipboard v0.1.4
-	github.com/charmbracelet/bubbles v0.16.1
-	github.com/charmbracelet/bubbletea v0.27.1
-	github.com/charmbracelet/lipgloss v0.13.0
+	github.com/charmbracelet/bubbles v0.21.0
+	github.com/charmbracelet/bubbletea v1.3.7
+	github.com/charmbracelet/lipgloss v1.1.0
 	github.com/mattn/go-runewidth v0.0.15
-	github.com/rs/zerolog v1.33.0
-	github.com/sergi/go-diff v1.3.1
-	github.com/spf13/cobra v1.8.0
+	github.com/rs/zerolog v1.34.0
+	github.com/sergi/go-diff v1.4.0
+	github.com/spf13/cobra v1.10.1
 )
 
 require (
