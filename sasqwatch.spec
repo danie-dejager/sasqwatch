@@ -4,7 +4,7 @@
 Summary:   A modern take on the classic watch command for Linux
 Name:      sasqwatch
 Version:   0.2.5
-Release:   7
+Release:   8
 License:   MIT
 URL:       https://github.com/fabio42/sasqwatch
 Source0:   https://github.com/fabio42/sasqwatch/archive/refs/tags/v%{version}.tar.gz
