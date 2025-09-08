@@ -19,9 +19,13 @@ Sasqwatch is a modern take on the classic watch command for Linux. It periodical
 
 %prep
 %setup -q
+go mod vendor
 
 %build
-GO111MODULE=on CGO_ENABLED=0 go build -ldflags="-s -w -X 'github.com/fabio42/sasqwatch/cmd.Version=%{version}'" -o %{name}
+GO111MODULE=on CGO_ENABLED=0 go build \
+    -mod=vendor \
+    -ldflags="-s -w -X 'github.com/fabio42/sasqwatch/cmd.Version=%{version}'" \
+    -o %{name}
 strip %{name}
 upx %{name}
 
