@@ -6,8 +6,8 @@ Name:      sasqwatch
 Version:   0.2.6
 Release:   1
 License:   MIT
-URL:       https://github.com/fabio42/sasqwatch
-Source0:   https://github.com/fabio42/sasqwatch/archive/refs/tags/v%{version}.tar.gz
+URL:       https://github.com/danie-dejager/sasqwatch
+Source0:   https://github.com/danie-dejager/sasqwatch/archive/refs/tags/v%{version}.tar.gz
 
 BuildRequires: golang
 BuildRequires: git
