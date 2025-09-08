@@ -7,7 +7,8 @@ Version:   0.2.6
 Release:   1
 License:   MIT
 URL:       https://github.com/danie-dejager/sasqwatch
-Source0:   https://github.com/danie-dejager/sasqwatch/archive/refs/tags/v%{version}.tar.gz
+Source0:   sasqwatch-%{version}-dist.tar.gz
+
 
 BuildRequires: golang
 BuildRequires: git
@@ -18,7 +19,7 @@ Requires:      procps-ng
 Sasqwatch is a modern take on the classic watch command for Linux. It periodically executes a command and displays the output in a clear and concise manner.
 
 %prep
-%setup -q
+%setup -q -n sasqwatch
 go mod vendor
 
 %build
@@ -36,7 +37,7 @@ upx %{name}
 %{_bindir}/%{name}
 
 %changelog
-* Mon Sep 8 2025 Danie de Jager <danie.dejager@gmail.com> - 0.2.6-1 
+* Mon Sep 8 2025 Danie de Jager <danie.dejager@gmail.com> - 0.2.6-1
 * Fri Jun 13 2025 Danie de Jager <danie.dejager@gmail.com> - 0.2.5-7
 * Fri Dec 20 2024 Danie de Jager <danie.dejager@gmail.com> - 0.2.5-6
 * Mon Sep 30 2024 Danie de Jager <danie.dejager@gmail.com> - 0.2.5-5
