@@ -1,6 +1,6 @@
 module github.com/fabio42/sasqwatch
 
-go 1.20
+go 1.24
 
 // This file has been updated to use the latest versions of direct dependencies.
 // Indirect dependencies are managed by Go and do not need to be listed here.
